@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leader Board</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+            <!-- font awesome icon -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <!-- Header Start -->
+    <header>
+        <nav class="nav">
+            <div class="nav__logo">
+                <ul class="nav__logo__item">
+                    <li><img src="images/icons/logo.png" alt="Logo"></li>
+                    <li>Idea</li>
+                </ul>
+            </div>
+            <div class="nav__item">
+                <ul class="nav__link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#"><img src="images/icons/profile.png" alt="Profile"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+    <main>
+        <!-- top players and top blogs -->
+        <section class="top__players__and__blogs">
+            <div class="container">
+                <div class="top__players">
+                    <h2>Top Player</h2>
+                    <div class="players">
+                        <div class="player">
+                            <img src="images/players/player-1.png" alt="Player: 1" class="player__img">
+                            <h3 class="player__name">John Smith</h3>
+                        </div>
+                        <div class="player">
+                            <img src="images/players/player-2.png" alt="Player: 2" class="player__img">
+                            <h3 class="player__name">Pro Rasel</h3>
+                        </div>
+                        <div class="player">
+                            <img src="images/players/player-3.png" alt="Player: 3" class="player__img">
+                            <h3 class="player__name">Abu Sufian</h3>
+                        </div>
+                        <div class="player">
+                            <img src="images/players/player-4.png" alt="Player: 4" class="player__img">
+                            <h3 class="player__name">Shajedul Karim</h3>
+                        </div>
+                        <div class="player">
+                            <img src="images/players/player-5.png" alt="Player: 5" class="player__img">
+                            <h3 class="player__name">Maruf Ahmed</h3>
+                        </div>
+                        <div class="player">
+                            <img src="images/players/player-6.png" alt="Player: 6" class="player__img">
+                            <h3 class="player__name">Mujahid</h3>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="top__blogs">
+                    <h2>Top Blog</h2>
+                    <div class="blogs">
+                        <!-- (.blog__img>img[src="images/blogs/blog-$.png"][alt="Blog: $"])+.blog__details>h3+p>span -->
+                        <div class="blog">
+                            <div class="blog__img">
+                                <img src="images/blogs/blog-1.png" alt="Blog: 1">
+                            </div>
+                            <div class="blog__details">
+                                <h3 class="blog__title">13 of My Favorite UI/UX Goodies</h3>
+                                <p class="blog__author"><span class="blog__by">By</span>Danny Sapio</p>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog__img">
+                                <img src="images/blogs/blog-2.png" alt="Blog: 2">
+                            </div>
+                            <div class="blog__details">
+                                <h3 class="blog__title">UI cheat sheet: list vs grids</h3>
+                                <p class="blog__author"><span class="blog__by">By</span>Tess Gadd</p>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog__img">
+                                <img src="images/blogs/blog-3.png" alt="Blog: 3">
+                            </div>
+                            <div class="blog__details">
+                                <h3 class="blog__title">7 typography tips for interface design</h3>
+                                <p class="blog__author"><span class="blog__by">By</span>Jeremiah Lam</p>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog__img">
+                                <img src="images/blogs/blog-4.png" alt="Blog: 4">
+                            </div>
+                            <div class="blog__details">
+                                <h3 class="blog__title">Your logo is copied</h3>
+                                <p class="blog__author"><span class="blog__by">By</span>Ferdinand Vogler</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="latest__course">
+            <div class="container">
+                <h2>Latest Course</h2>
+                <div class="courses">
+                    <div class="course">
+                        <img src="images/courses/course-1.png" alt="Course: 1" class="course__img">
+                        <h3 class="course__title">React - The Complete Guide 2020</h3>
+                        <p class="course__author">Reed Krakoff.</p>
+                        <div class="review">
+                            <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star star__gray"></i>  <span class="rating">4.5</span></div>
+                            <span class="duration"><i class="fa-solid fa-clock"></i> 01:30 hr</span></div>
+                    </div>
+                    <div class="course">
+                        <img src="images/courses/course-2.png" alt="Course: 1" class="course__img">
+                        <h3 class="course__title">Powerpoint 2020 Master Powerpoint Cour</h3>
+                        <p class="course__author">Walter Scott</p>
+                        <div class="review">
+                            <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star star__gray"></i>  <span class="rating">4.3</span></div>
+                            <span class="duration"><i class="fa-solid fa-clock"></i> 01:20 hr</span></div>
+                    </div>
+                    <div class="course">
+                        <img src="images/courses/course-3.png" alt="Course: 1" class="course__img">
+                        <h3 class="course__title">The Complete JavaScript Course 2020</h3>
+                        <p class="course__author">Reed Krakoff.</p>
+                        <div class="review">
+                            <div class="icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star star__gray"></i>  <span class="rating">4.5</span></div>
+                            <span class="duration"><i class="fa-solid fa-clock"></i> 01:30 hr</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
 </body>
+
 </html>
