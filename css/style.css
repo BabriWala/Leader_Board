@@ -222,3 +222,55 @@ hr {
   line-height: 20px;
 }
 /* Latest course End */
+
+/* Media Queries */
+@media screen and (max-width: 576px){
+  .container, .nav{
+    width: 340px;
+  }
+  h2{
+    text-align: center;
+  }
+  .nav__link li>a{
+    display: none;
+  }
+  .nav__link li:last-child>a{
+    display: inline-block;
+  }
+  .players{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blogs{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .blog{
+    flex-direction: column;
+  }
+  .courses{
+    flex-direction: column;
+  }
+  .course{
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 810px) {
+  .container, .nav{
+    width: 550px;
+  }
+  h2{
+    text-align: center;
+  }
+  .players{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .courses{
+    flex-wrap: wrap;
+  }
+  .course{
+    margin-bottom: 20px;
+  }
+}
