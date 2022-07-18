@@ -254,7 +254,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 577px) and (max-width: 810px) {
+@media screen and (min-width: 577px) and (max-width: 912px) {
   .container, .nav{
     width: 550px;
   }
